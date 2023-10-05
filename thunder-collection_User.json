@@ -1,0 +1,134 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "User",
+    "dateExported": "2023-10-05T12:33:13.717Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7fcc78b2-5310-49c9-8379-f7919557dc2b",
+            "colId": "e332bf0c-8652-45a5-8a85-f35d19592e09",
+            "containerId": "",
+            "name": "addUser",
+            "url": "http://localhost:8083/user/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-05T11:42:53.886Z",
+            "modified": "2023-10-05T11:59:16.760Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n  \"name\": \"LOLO\",\n  \"surname\": \"Muñoz\",\n  \"lastname\": \"García\",\n  \"email\": \"pauula.mnzz@gmail.com\",\n  \"password\": \"1234\",\n  \"role\": false,\n  \"usename\": \"pauulamnzz\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "493a947c-7510-410d-b31e-f08db4d4dd6f",
+            "colId": "e332bf0c-8652-45a5-8a85-f35d19592e09",
+            "containerId": "",
+            "name": "updateUser ",
+            "url": "http://localhost:8083/user/",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-10-05T11:43:11.425Z",
+            "modified": "2023-10-05T11:47:11.872Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":1,\n  \"name\": \"JUAN\",\n  \"surname\": \"Muñoz\",\n  \"lastname\": \"García\",\n  \"email\": \"pauula.mnzz@gmail.com\",\n  \"password\": \"1234\",\n  \"role\": false,\n  \"usename\": \"pauulamnzz\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a281d466-8907-42fc-b5ff-576b86c0a9ba",
+            "colId": "e332bf0c-8652-45a5-8a85-f35d19592e09",
+            "containerId": "",
+            "name": "deleteUser",
+            "url": "http://localhost:8083/user/509",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-05T11:47:26.503Z",
+            "modified": "2023-10-05T11:48:14.398Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7f8cf1e1-6fa1-4ee7-bf99-095656507944",
+            "colId": "e332bf0c-8652-45a5-8a85-f35d19592e09",
+            "containerId": "",
+            "name": "generateUsers",
+            "url": "http://localhost:8083/user/populate/100",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-10-05T11:48:45.349Z",
+            "modified": "2023-10-05T11:49:03.252Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "25c44a0a-7133-4778-a022-28c3cee911b8",
+            "colId": "e332bf0c-8652-45a5-8a85-f35d19592e09",
+            "containerId": "",
+            "name": "pagUser",
+            "url": "http://localhost:8083/user/?page=1",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-10-05T11:49:31.502Z",
+            "modified": "2023-10-05T11:50:33.302Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "607f74ff-d3a1-46e9-aedc-c32fdd7e1ceb",
+            "colId": "e332bf0c-8652-45a5-8a85-f35d19592e09",
+            "containerId": "",
+            "name": "pagUserSize",
+            "url": "http://localhost:8083/user/?page=1&size=3",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-10-05T11:49:46.701Z",
+            "modified": "2023-10-05T11:50:23.292Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "size",
+                    "value": "3",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "131855f4-12d2-47f6-ab2b-d252b8067ac8",
+            "colId": "e332bf0c-8652-45a5-8a85-f35d19592e09",
+            "containerId": "",
+            "name": "showUser",
+            "url": "http://localhost:8083/user/1",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-10-05T11:51:52.666Z",
+            "modified": "2023-10-05T11:52:06.333Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

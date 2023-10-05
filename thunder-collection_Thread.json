@@ -1,0 +1,134 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Thread",
+    "dateExported": "2023-10-05T12:33:25.661Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1c5207e4-d8db-489e-9d7d-8ef6f05edf24",
+            "colId": "75cb8ec1-1484-448c-941b-341377124ce4",
+            "containerId": "",
+            "name": "addThread",
+            "url": "http://localhost:8083/thread/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-05T11:52:35.269Z",
+            "modified": "2023-10-05T12:03:49.754Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n  \"title\": \"Mi primer suuuper posttt\",\n  \"id_user\": 506\n  \n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "37f5c677-cb01-4336-ab22-916a223f127d",
+            "colId": "75cb8ec1-1484-448c-941b-341377124ce4",
+            "containerId": "",
+            "name": "updateThread",
+            "url": "http://localhost:8083/thread/",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-10-05T11:52:45.048Z",
+            "modified": "2023-10-05T12:17:53.745Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 1,\n  \"title\": \"Mi padfsdfsdfsdfsdfamer postdasdsadasdasd (threadd)\",\n  \"id_user\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aff8dad8-e3a0-4dca-84dd-0d18896987e4",
+            "colId": "75cb8ec1-1484-448c-941b-341377124ce4",
+            "containerId": "",
+            "name": "deleteThread",
+            "url": "http://localhost:8083/thread/2",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-10-05T11:53:26.058Z",
+            "modified": "2023-10-05T11:55:58.204Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fbb5755b-6e4e-430c-ad0d-05e6f34b088a",
+            "colId": "75cb8ec1-1484-448c-941b-341377124ce4",
+            "containerId": "",
+            "name": "generateThreads",
+            "url": "http://localhost:8083/thread/populate/50",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-10-05T11:53:40.241Z",
+            "modified": "2023-10-05T11:55:27.964Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6ab720e3-d452-4b50-bb5d-b87f5c45ce88",
+            "colId": "75cb8ec1-1484-448c-941b-341377124ce4",
+            "containerId": "",
+            "name": "pagThread",
+            "url": "http://localhost:8083/thread/?page=1",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-05T11:53:50.493Z",
+            "modified": "2023-10-05T11:55:09.530Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "29ba5c9d-a218-47da-b43f-e74db32903de",
+            "colId": "75cb8ec1-1484-448c-941b-341377124ce4",
+            "containerId": "",
+            "name": "pagThreadSize",
+            "url": "http://localhost:8083/thread/?page=1&size=3",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-10-05T11:54:07.920Z",
+            "modified": "2023-10-05T11:54:50.718Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "size",
+                    "value": "3",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "49ccc487-1e4c-4668-822f-f8443f48933c",
+            "colId": "75cb8ec1-1484-448c-941b-341377124ce4",
+            "containerId": "",
+            "name": "showThread",
+            "url": "http://localhost:8083/thread/1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-10-05T11:54:17.319Z",
+            "modified": "2023-10-05T12:10:25.494Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
